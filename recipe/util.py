@@ -3,7 +3,8 @@ from typing import Any, Callable
 
 def is_empty(value: Any) -> bool:
     """
-    Returns True if *value* is None or has __len__ defined and has length of 0, False otherwise.
+    Returns True if *value* is None or has __len__ defined and has length of 0,
+    False otherwise.
     """
     return value is None or (hasattr(value, "__len__") and len(value) == 0)
 

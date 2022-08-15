@@ -4,8 +4,8 @@ from typing import Optional
 
 @dataclass(frozen=True, slots=True)
 class RecipeResult:
-    actual_value: str = ''
-    last_value: str = ''
+    actual_value: str = ""
+    last_value: str = ""
     error: Optional[Exception] = None
 
 
